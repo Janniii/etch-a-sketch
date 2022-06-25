@@ -29,8 +29,7 @@ function createGrid(n) {
 
 }
 
-createGrid(30);
-
+createGrid(80);
 
 
 const rows = document.querySelectorAll(".row");
@@ -39,4 +38,26 @@ const rows = document.querySelectorAll(".row");
 rows.forEach(row => row.addEventListener("click", () => {
     row.style.backgroundColor = "gold";
 }))
+
+
+
+function hover() {
+    this.style.backgroundColor = "pink";
+
+}
+
+
+
+let hoverToggle = 0;
+
+window.addEventListener("keydown", (e) => {
+    if (hoverToggle == 0 && e.keyCode == 72) {
+      hoverToggle = 1;
+      rows.forEach(row => row.addEventListener("mouseover", hover))
+    }
+      else if (hoverToggle != 0 && e.keyCode == 72) {
+        hoverToggle = 0;
+        rows.forEach(row => row.removeEventListener("mouseover", hover))
+      }
+});
 
