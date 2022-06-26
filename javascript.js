@@ -15,7 +15,6 @@ function createGrid(n) {
 
 
     const columnDivs = document.querySelectorAll(".column");
-    console.log(columnDivs.clientHeight, "wow");
 
     columnDivs.forEach(col => {
         
@@ -29,7 +28,7 @@ function createGrid(n) {
 
 }
 
-createGrid(80);
+createGrid(30);
 
 
 const rows = document.querySelectorAll(".row");
