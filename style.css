@@ -56,3 +56,134 @@ button {
     border-color: #209467;
     box-shadow: 0 0 1rem #209467;
 }
+
+.whoops {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+div.hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 55px;
+    color: black;
+    font-weight: 900;
+    font-size: 15px;
+    box-shadow: 1px;
+    border-radius: 10px;
+    border-style: 4px solid transparent;
+    background-color: gold;
+    border-style: dotted;
+}
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: -80%;
+    left: -10%;
+    margin-left: -50px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
+
+
+
+.lightwhite {
+    background-color:hsl(0, 0%, 97%);
+}
+
+.lightblack {
+    background-color: hsl(0, 0%, 16%)
+}
+
+.lightgrey {
+    background-color: hsl(0, 0%, 74%);
+}
+
+.lightgold {
+    background-color: hsl(50, 100%, 77%);
+}
+
+.lightsilver {
+    background-color: hsl(0, 0%, 89%);
+}
+
+.lightred {
+    background-color: hsl(0, 100%, 70%);
+}
+
+.lightgreen {
+    background-color: hsl(82, 100%, 72%);
+}
+
+.lightblue {
+    background-color: hsl(180, 25%, 80%);
+}
+
+.lighyellow {
+    background-color: hsl(60, 100%, 75%);
+}
+
+.lightorange {
+    background-color: hsl(22, 95%, 70%);
+}
+
+.lightbrown {
+    background-color: hsl(25, 60%, 78%);
+}
+
+.lightpurple {
+    background-color: hsl(259, 77%, 70%);
+}
+
+.lightpink {
+    background-color: hsl(300, 45%, 88%);
+}
+
+.lightcyan {
+    background-color: hsl(180, 7%, 51%);
+}
