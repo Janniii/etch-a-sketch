@@ -153,8 +153,6 @@ let previous = whiteButton.id;
 
 function selected() {
 
-  console.log(previous);
-
   if (lightToggle == 0 && previous != this.id) {
     let prev = document.getElementById(previous);
     prev.classList.remove("select");
