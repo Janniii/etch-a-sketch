@@ -43,11 +43,6 @@ const colorListReverse  = {
 
 
 
-
-// Object.values(colorList).includes("black")
-
-
-
 const container = document.querySelector("#container");
 
 
@@ -103,7 +98,6 @@ const hov = document.querySelector(".hover");
 
 let hoverToggle = 0;
 let lightToggle = 0;
-// 76
 
 window.addEventListener("keydown", (e) => {
     if (hoverToggle == 0 && e.keyCode == 72) {
@@ -182,33 +176,3 @@ this.classList.add("select");
 
 
 }
-
-
-
-
-
-
-
-  /*
-
-
-
-
-
-    if (clicked > 0 && previous != this.id) {
-      const prev = document.getElementById(previous)
-      prev.classList.remove("select")
-      previous = this.id;
-    
-    }
-
-    
-    selection = this.id
-    this.classList.add("select");
-    clicked = 1;
-  } 
-  */
-
-
-
-
