@@ -1,6 +1,5 @@
 body {
     display: flex;
-    /*background-color: black;*/
     background-color: rgb(255, 239, 213);
     justify-content: center;
     min-height: 100vh;
@@ -15,11 +14,8 @@ body {
 #container {
     width: 1600px;
     max-height: 858px;
-    /*background-color: white;*/
     display: flex;
     flex-direction: column;
-    /*background-color: rgb(red, green, blue)*/
-    /*rgba for opacity, 0.0 to 1.0*/
     
 }
 
@@ -40,13 +36,6 @@ button {
     border-style: 4px solid transparent;
 }
 
-/*
-button:active {
-    border-color: gold;
-}
-*/
-
-
 
 .buttongroup {
     display: flex;
@@ -61,15 +50,8 @@ button:active {
     color: white;
 }
 
-/*
-.pressRematch {
-    transform: scale(1.1);
-    border-color: #209467;
-    box-shadow: 0 0 10rem #209467;
-}
-*/
 
-.pressRematch {
+.select {
     transform: scale(1.2);
     border-color: #209467;
     box-shadow: 0 0 1rem #209467;

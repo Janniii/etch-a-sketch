@@ -75,56 +75,31 @@ buttons.forEach(button => button.addEventListener("click", selected))
 
 
 let previous = "";
-let r = 0;
+let clicked = 0;
 
 
 function selected() {
 
-  if (r == 0) {
+  if (clicked == 0) {
     previous = this.id;
-    this.classList.add("pressRematch");
+    this.classList.add("select");
   }
 
 
 
-  if (r > 0 && previous != this.id) {
+  if (clicked > 0 && previous != this.id) {
     const prev = document.getElementById(previous)
-    prev.classList.remove("pressRematch")
+    prev.classList.remove("select")
     previous = this.id;
     
   }
     
     selection = this.id;
-    this.classList.add("pressRematch");
-    r = 1;
+    this.classList.add("select");
+    clicked = 1;
 
-  
-
-  // this.style.backgroundColor = "gold";
 
   
 }
 
 
-
-
-/*
-
-function selected() {
-  if ((lst[0]) == this.id) {
-    this.classList.remove("pressRematch");
-    lst.pop()
-  }
-
-  else {
-
-    selection = this.id;
-    this.classList.add("pressRematch");
-    lst.push(this.id)
-  };
-
-  // this.style.backgroundColor = "gold";
-
-  
-}
-*/
