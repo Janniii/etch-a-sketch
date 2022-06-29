@@ -85,8 +85,6 @@ function createGrid(n) {
 createGrid(30);
 
 
-
-
 const rows = document.querySelectorAll(".row");
 
 
@@ -104,9 +102,7 @@ function hover() {
 
 
 function trailHover() {
-  // selection =`rgba(${redValue}, ${greenValue}, ${blueValue}, ${opacityValue+=0.1})`
   selectionTrail = `rgba(${redValue}, ${greenValue}, ${blueValue}, ${opacityValue+=0.1})`
-  //this.style.backgroundColor = selection;
   this.style.backgroundColor = selectionTrail;
 
   if (opacityValue.toFixed(1) >= 1.0) {
@@ -123,9 +119,6 @@ function trailHover() {
   console.log(opacityValue);
 }
 
-
-
-// const hov = document.querySelector(".hover");
 
 const hov = document.querySelector("#Hover");
 const light = document.querySelector("#Light");
@@ -177,11 +170,9 @@ window.addEventListener("keydown", (e) => {
       hov.classList.remove("select2");;
       light.classList.remove("select2");
 
-      // buttons.forEach(button => button.classList.remove("select"));
 
       trail.classList.add("select2");
       trailToggle = 1;
-      // selection = `rgba(${redValue}, ${greenValue}, ${blueValue}, ${opacityValue})`
       selectionTrail = `rgba(${redValue}, ${greenValue}, ${blueValue}, ${opacityValue})`
       rows.forEach(row => row.addEventListener("mouseover", trailHover))
 
@@ -211,8 +202,6 @@ buttons.forEach(button => button.setAttribute("style", `background-color: ${butt
 
 
 buttons.forEach(button => button.addEventListener("click", selected))
-
-
 
 
 
