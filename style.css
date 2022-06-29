@@ -89,7 +89,6 @@ div.hover {
     box-shadow: 1px;
     border-radius: 10px;
     border-style: 4px solid transparent;
-    /*background-color: gold;*/
     background-color: goldenrod;
     border-style: dotted;
 }
@@ -116,7 +115,6 @@ div.hover {
   
   .tooltip .tooltiptext {
     visibility: hidden;
-    /*width: 120px;*/
     width: 250px;
     background-color: #555;
     color: #fff;
@@ -134,21 +132,6 @@ div.hover {
     transition: opacity 0.3s;
     font-size: 20px;
   }
-  
- 
-/*
-.tooltip .tooltiptext::after {
-    content: " ";
-    position:absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
-  }  
-*/
- 
   
   
   .tooltip:hover .tooltiptext {
